@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+.bgimg{
+    width: 100%;
+    height: 100vh;
+    object-fit:cover;
+    object-position: center;
+    transform: scale(1);
+}
+.container{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+        background: linear-gradient(90deg, rgb(21, 51, 136) 0%, rgba(0, 0, 0, 0.623) 35%, rgba(255, 255, 0, 0.541) 100%);
+
+}
+.container h3{
+    font-size: 50px;
+    color: rgb(255, 251, 0);
+    letter-spacing: 5px;
+}
+.container button{
+    background: blue;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 30px;
+    cursor: pointer;
+    margin-top: 3%;
+}
+.container button:hover{
+    background: yellow;
+    color: blue;
+}
+.container form{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container form h3{
+    font-size: 30px;
+    text-align: justify;
+}
+.container form p{
+    font-size: 25px;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+.container form input{
+    padding: 10px 15px;
+    font-size: 18px;
+    outline: none;
+    width: 280px;
+    opacity: 1;
+    animation-delay: 0.5s;
+}
+
+@media screen and (max-width: 600px) {
+    .container form h3{
+        font-size: 25px;
+    }
+}
+
+.cover{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.cover img{
+    width: 24.5vw;
+    height: 100vh;
+    object-fit: cover;
+    transition: width 0.1s, height 0.3s;
+}
+.txt{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    text-align: center;
+    background: linear-gradient(90deg, rgba(18, 33, 121, 0.459) 0%, rgba(165, 165, 18, 0.541) 100%);
+}
+.txt img{
+    height: 60vh;
+}
+.txt p{
+    font-size: 25px;
+    color: yellow;
+}
+.txt span{
+    font-size: 20px;
+    color: white;
+}
+@media screen and (max-width: 768px) {
+    .container form h3{
+        font-size: 25px;
+    }
+
+    .cover img {
+        width: 49%;
+        height: 49%;
+        position: relative;
+    }
+    .txt img{
+        width: 50%;
+        height: 40vh;
+    }
+}
